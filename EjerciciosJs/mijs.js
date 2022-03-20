@@ -185,7 +185,7 @@ var nota5 = prompt("ingrese la quita nota: ");
 var promedio = (parseFloat(nota1)+parseFloat(nota2)+parseFloat(nota3)+parseFloat(nota4)+parseFloat(nota5))/5;
 
 alert ("El promedio de las notas del alumno es de: " + promedio);*/
-
+/*
 // 14 
 var año = prompt("ingrese el año de nacimiento: ");
 var añoactu = prompt("ingrese el año actual: ");
@@ -194,4 +194,86 @@ if(año <= añoactu){
     edad = añoactu - año;
     
     alert("la edad es iagual a: "+edad+ " años");
+}*/
+/*
+//15
+var Edad = prompt("Digite su edad: ");
+var Dias = prompt("Digite los días de Hospitalización: ");
+switch (true){
+    case Edad <= 10:
+        if(Dias<=1){
+            CostoDía = 20000;
+            Recargo = 0;
+        }
+        else if (Dias<=4){
+            CostoDía = 30000;
+            Recargo = 0;
+        }
+        else if (Dias<=7){
+            CostoDía = 25000;
+            Recargo = 0.05;
+        }
+        else {
+            CostoDía = 15000;
+            Recargo = 0.10;  
+        }
+        break;
+        case Edad <= 17:
+        if(Dias<=1){
+            CostoDía = 20000;
+            Recargo = 0;
+        }
+        else if (Dias<=4){
+            CostoDía = 30000;
+            Recargo = 0;
+        }
+        else if (Dias<=7){
+            CostoDía = 25000;
+            Recargo = 0;
+        }
+        else {
+            CostoDía = 15000;
+            Recargo = 0.10;  
+        }
+        break;
+        case Edad <= 49:
+        if(Dias<=1){
+            CostoDía = 20000;
+            Recargo = 0;
+        }
+        else if (Dias<=4){
+            CostoDía = 30000;
+            Recargo = 0;
+        }
+        else if (Dias<=7){
+            CostoDía = 25000;
+            Recargo = 0;
+        }
+        else {
+            CostoDía = 15000;
+            Recargo = 0.15;  
+        }
+        break;
+        default :
+        if(Dias<=1){
+            CostoDía = 20000;
+            Recargo = 0;
+        }
+        else if (Dias<=4){
+            CostoDía = 30000;
+            Recargo = 0;
+        }
+        else if (Dias<=7){
+            CostoDía = 25000;
+            Recargo = 0.15;
+        }
+        else {
+            CostoDía = 15000;
+            Recargo = 0.20;  
+        }
 }
+Subt = (Dias * CostoDía);
+ValorRec = Subt * Recargo;
+Costo = Subt + ValorRec;
+alert ("Los días de hospitalización del paciente son: "+Dias+", el costo por día es: "+CostoDía+", el valor del recargo es: "+ValorRec+" y el valor a pagar es: "+Costo);
+*/
